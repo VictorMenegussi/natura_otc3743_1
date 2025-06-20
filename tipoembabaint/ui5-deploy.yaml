@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: br.numen.tipoembabaint
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: https://vhnacnc1ci.sap.naturaeco.com:44300
+          client: '210'
+        app:
+          name: ZUI5_EMBABAINT
+          package: Z_OTC3743_T1
+          transport: NC1K900496
+        exclude:
+          - /test/
