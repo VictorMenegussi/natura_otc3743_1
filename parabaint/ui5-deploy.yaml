@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: br.numen.tipoembabaint
+  name: br.numen.parabaint
 type: application
 builder:
   resources:
@@ -17,7 +17,7 @@ builder:
           url: https://vhnacnc1ci.sap.naturaeco.com:44300/
           client: '210'
         app:
-          name: ZUI5_EMBABAINT
+          name: ZUI5_PARABAINT
           package: Z_OTC3743_T1
           transport: NC1K900496
         exclude:

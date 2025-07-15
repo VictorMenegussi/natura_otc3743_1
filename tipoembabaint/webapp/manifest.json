@@ -135,6 +135,7 @@
               }
             },
             "tableSettings": {
+              "multiSelect": true,
               "type": "ResponsiveTable"
             }
           }
